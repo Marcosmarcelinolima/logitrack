@@ -1,0 +1,10 @@
+"""Cria engine, sessões e classe base dos modelos ORM."""
+from sqlalchemy import create_engine
+from sqlalchemy.orm import DeclarativeBase, sessionmaker
+from app.core.config import settings
+
+engine = create_engine(settings.database_url, pool_pre_ping=True)
+SessionLocal = sessionmaker(bind=engine, autoflush=False, expire_on_commit=False)
+
+class Base(DeclarativeBase):
+    """Base comum das entidades persistidas."""
