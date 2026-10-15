@@ -1,11 +1,10 @@
-"""Entidade que representa o pedido logístico e seu rastreamento."""
 from datetime import datetime
 from sqlalchemy import DateTime, ForeignKey, Integer, String
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from app.core.database import Base
 
 class Entrega(Base):
-    """Entrega com código único, quantidade reservada e estado atual."""
+    """Representa uma entrega no banco de dados. Situação: implementada."""
     __tablename__ = "entregas"
     id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True)
     codigo_rastreamento: Mapped[str] = mapped_column(String(50), unique=True, nullable=False, index=True)
