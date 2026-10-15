@@ -74,4 +74,4 @@ Cadastro e consulta das três entidades, validação dos dados de entrada, busca
 
 ## Integrantes
 
-Preencher com os nomes completos do grupo antes da entrega.
+Marcos Marcelino, Simei Mondardo e Henrique
