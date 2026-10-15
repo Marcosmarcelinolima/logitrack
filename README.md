@@ -59,7 +59,9 @@ As respostas completas e os erros estão em [docs/contrato-da-api.md](docs/contr
 
 Cadastro e consulta das três entidades, validação dos dados de entrada, busca por ID, reserva transacional de estoque, ajuste protegido de saldo, transições rastreáveis e baixa de estoque na entrega. Não foram incluídos PUT ou DELETE, pois nenhuma regra exige essas operações.
 
+
 ## Equivalência arquitetural com Java/Spring
+
 
 | Critério da disciplina | Implementação Python |
 |---|---|
